@@ -22,10 +22,33 @@ img {
     margin: 0 auto;
 }
 
-img.persona {
-    display: flex;
+.persona {
+    display: inline-flex;
     align-items: center;
-    margin: 4rem;
+    text-align: center;
+    
+}
+
+.persona img {
+    padding: 0 5px 0 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* grid sample */
+.grid_container {
+    display: grid;
+    grid-template-columns: auto auto;
+    /* padding: 10px; */
+}
+
+.grid_item {
+    padding: 1px;
+    text-align: center;
+}
+
+.persona_img {
+    width: 100%;
 }
 
 em {
