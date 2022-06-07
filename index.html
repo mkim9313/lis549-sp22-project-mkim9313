@@ -13,91 +13,150 @@
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Roboto+Slab:200,400,600,700"
             rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
+
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+            integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     </head>
 
 <body>
     <header>
         <nav>
-            <a href="https://www.minj00kim.com/"><img src="img/Logo.png" width="53px" alt="Visit Portfolio"></a>
-            <ul>
-                <li class="menu"><a href="index.html">OVERVIEW</a></li>
-                <li class="menu"><a href="research.html">RESEARCH</a></li>
-                <li class="menu"><a href="design.html">DESIGN</a></li>
+            <a href="https://www.minj00kim.com/"><img id="logo" src="img/Logo.png" width="53px"
+                    alt="Visit Portfolio"></a>
+            <ul class="nav d-flex justify-content-end fixed-top m-4">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">OVERVIEW</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="research.html">RESEARCH</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="design.html">DESIGN</a>
+                </li>
             </ul>
         </nav>
     </header>
 
-        <div class="title">
-            <h1>Pack With Us</h1>
-            <p>How can we improve the security screening experience at the airport?</p>
-            <img src="img/cover_photo.png" width=550 alt="Pack With Us Cover Page">
+    <div class="title text-center">
+        <h1>Pack With Us</h1>
+        <p>How can we improve the security screening experience at the airport?</p>
+        <img id="cover" src="img/cover_photo.png" width=300 alt="Pack With Us Cover Page">
+    </div>
+
+    <main>
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container-fluid" id="intro">
+                <div class="row justify-content-center">
+                    <div class="d-flex col col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                        <div id="content">
+                            <h2>Overview</h2>
+                            <p>Have you ever felt anxious waiting in the line to pass through TSA screening? Have you
+                                ever
+                                experienced
+                                your items being confiscated due to standard security procedures? Airlines and travel
+                                agencies
+                                are
+                                less
+                                involved after travelers book their tickets. For infrequent travelers, the lack of
+                                guidance
+                                post-booking
+                                may lead to feelings of insecurity while packing and going through the TSA, frustration
+                                if they
+                                were
+                                not
+                                informed of important security guidelines and embarrassment if they are singled out for
+                                confiscation.
+                                <br><br>This project was intended to design an experience of packing and getting ready
+                                for a
+                                trip after
+                                booking
+                                a flight ticket. Pack with Us assists flyers by providing a personalized packing
+                                checklist based
+                                on
+                                their locational data and user information.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex col col-sm-8 col-md-4 col-lg-2 col-xl-2">
+                        <div id="content">
+                            <h3>Duration</h3>
+                            <p>Mar 2021 – June 2021</p>
+
+                            <h3>Responsibilities</h3>
+                            <p>UX design</p>
+
+                            <h3>Team</h3>
+                            <p>Minjoo Kim
+                                <br>Ansul Sinha
+                                <br>Kenney Nguyen
+                                <br>Hannah Chung
+                                <br>Lily Hernandez
+                            </p>
+                        </div>
+                    </div>
+                    </section>
+                </div>
+            </div>
+
         </div>
 
-        <div id="intro">
-            <section class="boxes">
-                <div class="overview">
-                    <h2>Overview</h2>
-                    <p>Have you ever felt anxious waiting in the line to pass through TSA screening? Have you ever
-                        experienced
-                        your items being confiscated due to standard security procedures? Airlines and travel agencies
-                        are
-                        less
-                        involved after travelers book their tickets. For infrequent travelers, the lack of guidance
-                        post-booking
-                        may lead to feelings of insecurity while packing and going through the TSA, frustration if they
-                        were
-                        not
-                        informed of important security guidelines and embarrassment if they are singled out for
-                        confiscation.
-                        <br><br>This project was intended to design an experience of packing and getting ready for a
-                        trip after
-                        booking
-                        a flight ticket. Pack with Us assists flyers by providing a personalized packing checklist based
-                        on
-                        their locational data and user information.
-                    </p>
-                </div>
-                <div class="other">
-                    <h3>Duration</h3>
-                    <p>Mar 2021 – June 2021</p>
-
-                    <h3>Responsibilities</h3>
-                    <p>UX design</p>
-
-                    <h3>Team</h3>
-                    <p>Minjoo Kim
-                        <br>Ansul Sinha
-                        <br>Kenney Nguyen
-                        <br>Hannah Chung
-                        <br>Lily Hernandez
-                    </p>
-                </div>
-            </section>
-        </div>
-
-        <iframe width="800" height="550" src="https://www.youtube.com//embed/DbdCM2KamGk">
+        <iframe id="prototypevideo" src="https://www.youtube.com//embed/DbdCM2KamGk">
         </iframe>
 
-        <div class="emphasis" id="quote">
-            <p>Packing for your trip and going through TSA should be as frictionless as <br>reciting your favorite
-                Chipotle
-                order</p>
+        <div class="jumbotron jumbotron-fluid" id="quote">
+            <div class="container">
+              <p>Packing for your trip and going through TSA should be as frictionless as <br>reciting your favorite
+                Chipotle order</p>
+            </div>
+          </div>
+
+        <div id="next" class="d-flex justify-content-center mx-3">
+            <a href="research.html" class="btn btn-primary btn-lg active mx-4" role="button"
+                aria-pressed="true">Research
+                Process</a>
+            <a href="design.html" class="btn btn-primary btn-lg active mx-4" role="button" aria-pressed="true">Design
+                Process</a>
         </div>
 
-        <div id="next">
-            <p> 
-                Explore the...
-                <a href="research.html"> Research Process</a>
-                <a href="design.html"> Design Process</a>
-            </p>
-        </div>
-
+        <div id="content">
+            <h3>About Me</h3>
+            <div class="container-fluid my-5">
+                <div class="row justify-content-center">
+                    <div class="col col-sm-6 col-lg-4 my-2">
+                        <img src="img/profile.jpg" width=250 alt="Picture of Me">
+                    </div>
+                    <div class="d-flex col col-sm-10 col-lg-8 my-2">
+                        <p>Hi, I'm Minjoo.<br><br>I am pursuing a master's degree in the Information Management program
+                            (MSIM)
+                            at the University of Washington, focusing on User Experience and Information
+                            Architecture.<br><br>We
+                            inhabit a world of excess information, which makes it necessary to make these heaps of
+                            knowledge accessible,
+                            useful, and meaningful. I combine my knowledge in Psychology with Information Management to
+                            become a User
+                            Experience Designer who can approach the design problem in different point of views. As a
+                            designer, my goal
+                            is to strive to change the issues that affect our community using technology.<br><br>Outside
+                            design, I
+                            love to travel and try hidden restaurants in the city. My goal this year is to visit every
+                            restaurant in
+                            Seattle Chinatown!
+                            <br><br>Thank you for visiting my portfolio and if you like my work, feel free to contact
+                            me!
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </main>
     <footer>
         &copy; Minjoo Kim 2022
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

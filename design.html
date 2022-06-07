@@ -20,12 +20,18 @@
 <body>
     <header>
         <nav>
-            <a href="https://www.minj00kim.com/"><img src="img/Logo.png" width="53px" alt="Visit Portfolio"></a>
-            <ul>
-                <li class="menu"><a href="index.html">OVERVIEW</a></li>
-                <li class="menu"><a href="research.html">RESEARCH</a></li>
-                <li class="menu"><a href="design.html">DESIGN</a></li>
-            </ul>
+            <a href="https://www.minj00kim.com/"><img id="logo" src="img/Logo.png" width="53px" alt="Visit Portfolio"></a>
+            <ul class="nav d-flex justify-content-end fixed-top m-4">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html">OVERVIEW</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="research.html">RESEARCH</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="design.html">DESIGN</a>
+                </li>
+              </ul>
         </nav>
     </header>
 
@@ -34,20 +40,20 @@
         <h2>Design</h2>
     </div>
     <main>
-        <div>
+        <div id="content">
             <h3>Limitation</h3>
             <p>Our design had to be feasible within the context of our organization and environment. TSA has a strict
                 security guideline that cannot be easily changed and every airport has different structures, making it
                 impossible for our team to redesign the airport environment or the security screening process.</p>
         </div>
-        <div>
+        <div id="content">
             <h3>Voice AI</h3>
             <p>Packing for a trip can be a busy process that requires moving around the house and continuously using
                 both hands. Our team integrated a voice AI in the service so the travelers can easily use the service
                 while packing without having to use their hands more. They can simply use their voice -cased digital
                 assistant such as Siri or Alexa while packing.</p>
         </div>
-        <div>
+        <div id="content">
             <h3>Use Case Scenario</h3>
             <p>
             <ol>
@@ -62,17 +68,21 @@
             </ol>
             </p>
         </div>
-        <div>
-
+        <div id="content">
             <h3>Prototype</h3>
-            <p>Insert Prototype images </p>
-            <img width=700px src="img/Welcome Confirmation Next.png" alt="Desktop Prototype">
+            <img id="main" width=300px src="img/prototype1.png" alt="Prototype">
+            <img id="main" width=300px src="img/prototype2.png" alt="Prototype">
+            <img id="main" width=300px src="img/prototype3.png" alt="Prototype">
+            <img id="main" width=300px src="img/prototype4.png" alt="Prototype">
+            <img id="main" width=300px src="img/prototype5.png" alt="Prototype">
         </div>
     </main>
     <footer>
         &copy; Minjoo Kim 2022
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
